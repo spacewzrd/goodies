@@ -1,0 +1,63 @@
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.logo{
+  margin-top: -5em;
+}
+.icon{
+  height: 100px;
+  width: 100px;
+}
+.elements8{
+  margin-top: 5em !important;
+  margin-bottom: 5em !important;
+}
+.oswald{
+  font-family: 'Oswald', sans-serif;
+}
+
+/*helpers*/
+.marg-0 {
+  margin-top: 0px;
+}
+.hoverable{
+  border-radius: 5em !important
+}
+.marker{
+  font-family: 'Permanent Marker', cursive;
+}
+.bigfont{
+  font-family: 'Rubik Mono One', sans-serif;
+}
+.padder{
+  padding: 1em;
+  line-height: 2;
+}
+
+/*blinking animation*/
+.blink-me {
+  animation: blinker 3s linear infinite;
+}
+@keyframes blinker {
+  50% { opacity: 0.1; }
+}
+
+/*mobile styles*/
+@media (max-width: 425px) {
+  .icon{
+    height: auto;
+    width: null;
+  }
+  .logo{
+    margin-top: 0em;
+    margin-bottom: 2em;
+  }
+}
